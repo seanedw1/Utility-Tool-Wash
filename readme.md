@@ -5,8 +5,12 @@
 Write the below code in the terminal for your application.
 ```
 npm i -s utilitytoolwash
-
 ```
+
+
+
+
+### How to Use the Package
 
 Add a directory and log file **log/debugs.log** into your root to grab all the log queries from **utilitytoolwash**
 
@@ -15,11 +19,7 @@ Add a directory and log file **log/debugs.log** into your root to grab all the l
 mkdir log
 cd log
 touch debugs.log
-
 ```
-
-
-### How to Use the Package
 
 #### Example
 ```
@@ -29,10 +29,8 @@ const dataLog = require('utilitytoolwash');
 // Use the utilitytoolwash
 // Debug = ON Console.logging Data into log file
   dataLog(`${new Date()}`, 'Our Server is Running', port);
-
 ```
-
-# usage
+<br>
 
 Make sure to follow these steps when using the data to log into your log directory.
 
