@@ -9,7 +9,6 @@ npm i -s utilitytoolwash
 
 
 
-
 ### How to Use the Package
 
 Add a directory and log file **log/debugs.log** into your root to grab all the log queries from **utilitytoolwash**
