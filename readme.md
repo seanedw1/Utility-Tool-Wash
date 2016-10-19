@@ -1,40 +1,30 @@
-# Documentation for NPM package utilitytoolwash v1.0.2
+# utilitytoolwash
 
  [ ![Codeship Status for URL Shortener](https://codeship.com/projects/59b912f0-76d2-0134-9160-32ede8a13401/status?branch=master)](https://codeship.com/projects/179701)
 
+## Getting started
 
-# Install
-Write the below code in the terminal for your application.
+### Install
+In terminal for your application.
 ```
 npm i -s utilitytoolwash
 ```
+### Usage
 
-### How to Use the Package
-
-Add a directory and log file **log/debugs.log** into your root to grab all the log queries from **utilitytoolwash**
-
-```
-// Add log directory and debugs.log files to root of your application
-mkdir log
-cd log
-touch debugs.log
-```
-
-#### Example
-```
-// Call The Module into a script
-const dataLog = require('utilitytoolwash');
-
-// Use the utilitytoolwash
-// Debug = ON Console.logging Data into log file
-  dataLog(`${new Date()}`, 'Our Server is Running', port);
-```
-<br>
-
-Make sure to follow these steps when using the data to log into your log directory.
+To start your server with debug turned on
 
 ```
-//Used: date, message and object in it.
-dataLog(`${new Date()}`, 'Our Server is Running', port);
+DEBUG=true node src/server
 ```
-Make sure when adding your **dataLog();** first comes the **date**, then the **text message** which explain the function or process that you wanna **console.log** out to the **.log directory** and finally the **object** you are using.
+
+### Debugging
+
+require package into file
+
+```
+const utw = require('utilitytoolwash');
+```
+
+```
+utw.debug(date,msg,obj)
+```
