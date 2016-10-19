@@ -11,20 +11,20 @@ npm i -s utilitytoolwash
 ```
 ### Usage
 
-To start your server with debug turned on
-
-```
-DEBUG=true node src/server
-```
-
-### Debugging
-
-require package into file
+Require package into file
 
 ```
 const utw = require('utilitytoolwash');
 ```
 
+Debug excepts three params one for the title,one for the object, and one for the status. status should be set to warn, error, log or undefined.
+
 ```
-utw.debug(date,msg,obj)
+utw.debug('title goes here', obj, status);
+```
+
+To start your server with debug turned on
+
+```
+DEBUG=true node src/server
 ```

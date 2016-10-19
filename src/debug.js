@@ -7,13 +7,13 @@ exports.debugWash = (title, obj, status) => {
   if (process.env.DEBUG) {
     // if console error
     if (status === 'error') {
-      console.log(date.inverse, title.bgYellow, obj);
+      console.log(colors.inverse(date), colors.red(title), obj);
     // if console warn
     } else if (status === 'warn') {
-      console.log(date.inverse, title.bgYellow, obj);
+      console.log(colors.inverse(date), colors.yellow(title), obj);
     // if console log or undefined
     } else {
-      console.log(date.inverse, title.bgYellow, obj);
+      console.log(colors.inverse(date), colors.green(title), obj);
     // closes if statement
     }
   }
