@@ -38,7 +38,7 @@ const bump = require('utilitytoolwash').bump;
 ```
 ### Usage
 
-For the bumper you have 2 params a version, and a . updateType. updateType should be set to major, minor, or patch depending on the type of version bump you are making.
+For the bumper you have 2 params a version, and a updateType. updateType should be set to major, minor, or patch depending on the type of version bump you are making.
 
 ```
 // major example
